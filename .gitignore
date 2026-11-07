@@ -1,0 +1,49 @@
+
+# Only include files required for web deployment
+/*
+
+# Main application files
+!/.gitignore
+!/README.md
+!/requirements.txt
+!/app.py
+
+# Application source code
+!/src/
+/src/*
+!/src/09_final_demo.py
+
+# ByteTrack configuration
+!/configs/
+/configs/*
+!/configs/bytetrack_v3.yaml
+
+# Required output assets
+!/outputs/
+/outputs/*
+
+# Demo video and CSV
+!/outputs/final_demo/
+/outputs/final_demo/*
+!/outputs/final_demo/match_roboflow_web.mp4
+!/outputs/final_demo/match_roboflow_final.csv
+
+# YOLOv8n trained model
+!/outputs/training/
+/outputs/training/*
+!/outputs/training/yolov8n_100epochs/
+/outputs/training/yolov8n_100epochs/*
+!/outputs/training/yolov8n_100epochs/weights/
+/outputs/training/yolov8n_100epochs/weights/*
+!/outputs/training/yolov8n_100epochs/weights/best.pt
+
+# Python temporary files
+__pycache__/
+*.pyc
+
+# Private configuration
+.env
+.env.*
+*.key
+*.pem
+secrets.toml
