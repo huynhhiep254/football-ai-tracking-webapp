@@ -144,3 +144,30 @@ Quarto source:
 To regenerate the PDF with Quarto installed:
 
     quarto render report/final_report.qmd --to pdf
+
+## 11. Online Web Application
+
+The Football AI Tracking application is deployed using
+Streamlit Community Cloud.
+
+Web App URL:
+PASTE_YOUR_STREAMLIT_URL_HERE
+
+GitHub Repository:
+https://github.com/huynhhiep254/football-ai-tracking-webapp
+
+### How to use the application
+
+1. Open the Web App URL.
+2. Upload an MP4 football video.
+3. Select the analysis duration (2, 5, or 10 seconds).
+4. Click "Run YOLOv8 + ByteTrack".
+5. View the processed tracking video.
+6. Download the results in MP4 and CSV formats.
+
+The application detects Player, Goalkeeper, Referee,
+and Ball. Persistent tracking IDs are assigned to
+detected players.
+
+The model may occasionally confuse players and referees,
+and small football objects can be difficult to detect.
