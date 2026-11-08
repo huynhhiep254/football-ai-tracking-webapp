@@ -47,3 +47,5 @@ __pycache__/
 *.key
 *.pem
 secrets.toml
+!/packages.txt
+!/packages.txt
