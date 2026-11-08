@@ -64,6 +64,14 @@ if uploaded_video is not None:
     else:
         st.video(uploaded_video.getvalue())
 
+        duration_seconds = st.selectbox(
+            "Select analysis duration",
+            options=[2, 5, 10],
+            index=0,
+            format_func=lambda x: f"First {x} seconds"
+        )
+
+
         if st.button(
             "🚀 Run YOLOv8 + ByteTrack",
             type="primary"
@@ -93,7 +101,7 @@ if uploaded_video is not None:
                 "--input",
                 str(input_path),
                 "--seconds",
-                "2"
+                str(duration_seconds)
             ]
 
             try:
