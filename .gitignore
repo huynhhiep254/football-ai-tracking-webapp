@@ -49,3 +49,4 @@ __pycache__/
 secrets.toml
 !/packages.txt
 !/packages.txt
+!/packages.txt
