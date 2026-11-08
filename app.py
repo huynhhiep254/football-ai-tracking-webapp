@@ -58,9 +58,8 @@ if uploaded_video is not None:
     st.success(f"Uploaded: {uploaded_video.name}")
     st.write(f"Video size: {size_mb:.2f} MB")
 
-    if size_mb > 50:
-        st.warning("Please choose a video under 50 MB.")
-
+    if size_mb > 200:
+    st.warning("Please choose a video under 200 MB.")
     else:
         st.video(uploaded_video.getvalue())
 
