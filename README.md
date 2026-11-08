@@ -151,7 +151,7 @@ The Football AI Tracking application is deployed using
 Streamlit Community Cloud.
 
 Web App URL:
-PASTE_YOUR_STREAMLIT_URL_HERE
+https://football-ai-tracking.streamlit.app/
 
 GitHub Repository:
 https://github.com/huynhhiep254/football-ai-tracking-webapp
